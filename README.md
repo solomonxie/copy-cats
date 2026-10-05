@@ -28,3 +28,13 @@ One-time setup: Settings → app → Paste from Other Apps → **Allow** (no pas
 
 ## Storage
 Local only (no iCloud for now). SwiftData metadata + payload files in an App Group container; stable IDs keep future sync possible.
+
+## Build
+Native Swift / SwiftUI, iOS 18+. Requires [XcodeGen](https://github.com/yonaskolb/XcodeGen).
+```sh
+cp Config/Local.xcconfig.example Config/Local.xcconfig   # set your team, bundle id, app group
+xcodegen generate
+open CopyCats.xcodeproj
+```
+
+Design docs: `docs/design/clipboard-history/`

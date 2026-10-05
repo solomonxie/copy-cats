@@ -1,0 +1,5 @@
+// Put your own values in Config/Local.xcconfig (gitignored); see Local.xcconfig.example
+DEVELOPMENT_TEAM = REPLACE_WITH_YOUR_TEAM_ID
+APP_BUNDLE_ID = io.github.solomonxie.copycats
+APP_GROUP_ID = group.io.github.solomonxie.copycats
+#include? "Local.xcconfig"
